@@ -1,0 +1,62 @@
+/* Login-Button-Styling */
+.custom-login-button {
+  padding: 8px 12px 8px 12px;
+  background-color: white;
+  color: #007bff;
+  border: solid 1px #007bff;
+  border-radius: 100px;
+  border-color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 15px; /* Abstand zu anderen Navbar-Items */
+}
+
+/* Hover-Effekt für den Button */
+.custom-login-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Dropdown-Menü-Styling */
+.custom-login-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+/* Login-Formular-Styling */
+.custom-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input-Felder im Login-Formular */
+.custom-login-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Fehlermeldung-Styling */
+.custom-login-error {
+  color: red;
+  margin-top: 10px;
+}
+.navbar--fixed-top {
+  width: 100% !important;
+}
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.navbar__logo {
+  margin-right: 2rem;
+}

@@ -1,0 +1,159 @@
+/* Container für die gesamte Login-Seite */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary-darker),
+    var(--ifm-color-primary-lighter)
+  );
+  padding: 20px;
+}
+
+/* Karte für das Login-Formular */
+.login-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Titel der Login-Seite */
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Untertitel der Login-Seite */
+.login-subtitle {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Eingabefelder-Gruppe */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Beschriftung für Eingabefelder */
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Eingabefelder-Styling */
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Hover- und Fokus-Effekte für Eingabefelder */
+.input-group input:focus {
+  border-color: var(--ifm-color-primary);
+  outline: none;
+}
+
+/* Login-Button-Styling */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover- und Disabled-Effekte für den Button */
+.login-button:hover {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+.login-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Fehlermeldung-Styling */
+.login-error {
+  color: #ff4d4d;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+/* Trennlinie für "oder" */
+.divider {
+  margin: 20px 0;
+  font-size: 0.9rem;
+  color: #888;
+  position: relative;
+  text-align: center;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  display: inline-block;
+  width: 45%;
+  height: 1px;
+  background: #ccc;
+  position: relative;
+  top: -0.3em;
+}
+
+/* Microsoft Login-Button */
+.microsoft-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  background-color: #0078d4; /* Microsoft-typisches Blau */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover-Effekt für den Microsoft-Button */
+.microsoft-login-button:hover {
+  background-color: #005a9e; /* Dunkleres Blau */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Disabled-Effekt für den Microsoft-Button */
+.microsoft-login-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Microsoft-Logo neben dem Button-Text */
+.microsoft-login-button .microsoft-logo {
+  display: inline-block;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg")
+    no-repeat center center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

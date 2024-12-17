@@ -1,0 +1,147 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #007bff;
+  --ifm-color-primary-dark: #0062cc;
+  --ifm-color-primary-darker: #004a99;
+  --ifm-color-primary-darkest: #003166;
+  --ifm-color-primary-light: #1a88ff;
+  --ifm-color-primary-lighter: #3395ff;
+  --ifm-color-primary-lightest: #4da3ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #007bff;
+  --ifm-color-primary-dark: #006fe6;
+  --ifm-color-primary-darker: #0062cc;
+  --ifm-color-primary-darkest: #0056b3;
+  --ifm-color-primary-light: #3395ff;
+  --ifm-color-primary-lighter: #66b0ff;
+  --ifm-color-primary-lightest: #99caff;
+  --ifm-menu-color: #dadde1;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+/*
+nav button {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #0056b3;
+}
+*/
+nav form input {
+  padding: 5px;
+  font-size: 14px;
+}
+/* Sidebar-Hintergrundfarbe ändern */
+/*.theme-doc-sidebar-container {
+  background-color: #f0f0f0;
+}*/
+
+/* Textfarbe und Schriftgröße anpassen */
+.menu__link {
+  font-size: 16px;
+}
+
+/* Hover-Effekt für Sidebar-Links */
+.menu__link:hover {
+  color: #007bff;
+  background-color: #e6f7ff;
+}
+
+/* Sidebar-Elemente linksbündig ausrichten */
+.menu__list {
+  align-items: flex-start;
+}
+
+/* Sidebar-Breite anpassen */
+.theme-doc-sidebar-container {
+  width: 300px; /* Standard ist 250px */
+}
+
+/* plus-jakarta-sans-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../static/fonts/plus-jakarta-sans-v8-latin-300.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../static/fonts/plus-jakarta-sans-v8-latin-300italic.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../static/fonts/plus-jakarta-sans-v8-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../static/fonts/plus-jakarta-sans-v8-latin-italic.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../static/fonts/plus-jakarta-sans-v8-latin-500.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../../static/fonts/plus-jakarta-sans-v8-latin-500italic.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../static/fonts/plus-jakarta-sans-v8-latin-700.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../../static/fonts/plus-jakarta-sans-v8-latin-700italic.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
