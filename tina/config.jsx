@@ -33,7 +33,7 @@ const RestartWarning = () => (
       <WarningIcon className="w-6 h-auto flex-shrink-0 text-yellow-400" />
       <div className="flex-1 text-sm text-yellow-700 whitespace-normal">
         To see settings changes reflected on your site, restart the Tina CLI
-        after saving <em>(local development only)</em>.
+        after saving <em>(local development only!)</em>.
       </div>
     </div>
   </p>
