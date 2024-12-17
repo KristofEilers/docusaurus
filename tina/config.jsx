@@ -149,7 +149,7 @@ const SettingsCollection = {
 
 // Konfiguration exportieren
 export default defineConfig({
-  branch: "main",
+  branch,
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, // Von tina.io erhalten
   token: process.env.TINA_TOKEN, // Von tina.io erhalten
   build: {
